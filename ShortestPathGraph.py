@@ -1,5 +1,4 @@
 import heapq
-import copy
 
 
 class Graph:
@@ -71,7 +70,6 @@ class Graph:
         return dist
 
     def johnson(self):
-        hold_list = copy.copy(self.adj)
         new_edge = len(self.adj)
         self.adj.append([])
         for i in range(new_edge):
@@ -85,4 +83,3 @@ class Graph:
                 self.adj[u][i][0], self.adj[u][i][1] + bellman_ford_dist[u] - bellman_ford_dist[self.adj[u][i][0]])
         self.adj.pop()
         print(self.adj)
-        self.adj = hold_list
