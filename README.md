@@ -8,9 +8,9 @@ this library contains a graph class capable of solving shortest path problems.
 
 ## how to use:
 ### constructing graphs:
-* to construct graph g with n vertices use: 
-` g = Grap(n)`
-* to add (u, v) edge with weight of w use:
+* to construct graph `g` with `n` vertices use:
+`g = Grap(n)`
+* to add `(u, v)` edge with weight of `w` use:
 `g.add_edge(u, v, w)`
 ### shortest path:
 * to calculate the shortest path from source src to other vertices by dijkstra use:
@@ -18,7 +18,7 @@ this library contains a graph class capable of solving shortest path problems.
 * to calculate the shortest path from source src to other vertices by Bellman-Ford use:
 `g.bellman_ford(src)`
 ### negative cycle detection:
-* to detect negative cycles in graph g use:
+* to detect negative cycles in graph `g` use:
 `g.bellman_ford(0, 0)`
 ### all weights positive:
 * to make all weights positive by johnson use:
